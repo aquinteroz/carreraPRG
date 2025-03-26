@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estación uno</title>
+    <title>Estación cinco</title>
     
     <!-- Bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -78,19 +78,19 @@
     En este teatro, cada sonido tiene su propia frecuencia. Pero solo uno de ellos es el más profundo,  
     el que resuena en lo más hondo del escenario. 🎤🔊  
 </p>
-<p>
+<p  class="lead">
     Tu misión es encontrar <strong>la nota más grave</strong> en un conjunto de sonidos generados con NumPy.  
 </p>
 <hr>
 <h5>📜 Instrucciones:</h5>
-
+<p class="lead">
 🎲 <strong>El destino está escrito:</strong> Usa <code>np.random.seed(42)</code> para que el universo (y NumPy) no cambie de opinión.<br>
 🎼 Genera <strong>tres frecuencias aleatorias</strong> entre 100 Hz y 1000 Hz.<br>
 🔍 Identifica la <strong>frecuencia más aguda</strong> de las tres.<br>
-🔑 Forma la clave secreta concatenando <code>"F"</code> + el número de la frecuencia más aguda + <code>"B"</code>.<br>
+🔑 Forma la clave secreta concatenando <code>"F"</code> + el número de la frecuencia más aguda + <code>"B"</code>.</p>
 <hr>
-<p>📂 <strong>Pista:</strong> Las notas graves son las que se sienten más profundas… y hacen vibrar el escenario. 🎶</p>
-<p>💡 Ejemplo de clave esperada: <code>F123B</code></p>
+<p class="lead">📂 <strong>Pista:</strong> Las notas graves son las que se sienten más profundas… y hacen vibrar el escenario. 🎶</p>
+<p class="lead">💡 Ejemplo de clave esperada: <code>F123B</code></p>
 
         <!-- Campo de Entrada con Bootstrap -->
         <input id="entrada" class="form-control w-25 mx-auto text-center" placeholder="Ingresa el código">
@@ -99,15 +99,15 @@
         <!-- Mensaje de éxito -->
         <div id="mensaje" class="alert alert-success mt-3">
             <h4 class="alert-heading">🎉 ¡Código correcto! 🎭</h4>
-    <p>✅ ¡Lo lograste! Has afinado el oído y descifrado el enigma sonoro del teatro.  
+    <p class="lead">✅ ¡Lo lograste! Has afinado el oído y descifrado el enigma sonoro del teatro.  
     Cada desafío te ha traído hasta aquí, y ahora solo queda un último acto…</p>
     <hr>
-    <p class="mb-0">🎓 Es hora de poner todo en orden y dirigirte a la <strong>Calle de la Cultura</strong>.  
+    <p class="lead">🎓 Es hora de poner todo en orden y dirigirte a la <strong>Calle de la Cultura</strong>.  
     Allí te espera el gran final. ¡No bajes el telón todavía! 🚀📜</p>
         </div>
         <div id="mensaje-error" class="alert alert-danger mt-3 hidden">
             <h4 class="alert-heading">Código incorrecto</h4>
-            <p>&#10060; ¡Ups! Parece que el código ingresado no es correcto. &#128533; No te preocupes, revisa bien e intenta nuevamente.  
+            <p class="lead">&#10060; ¡Ups! Parece que el código ingresado no es correcto. &#128533; No te preocupes, revisa bien e intenta nuevamente.  
     A veces, un pequeño error puede hacer la diferencia, así que tómate tu tiempo. ¡Tú puedes! &#128170;&#128640;</p>
         </div>
     </div>
