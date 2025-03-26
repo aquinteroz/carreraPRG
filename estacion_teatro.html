@@ -73,28 +73,24 @@
 </header>
 <body class="d-flex justify-content-center align-items-center">
     <div class="container-fluid text-center w-75">
-        <h2 class="mb-3">🕵️‍♂️ ESTACIÓN UNO: La Fórmula Secreta 📜</h2>
+        <h2 class="mb-3">🎭 ESTACIÓN CINCO: El Susurro del Teatro 🎶👻</h2>
         <p class="lead">
-    Un antiguo pergamino matemático revela una función misteriosa:  
-    $$\sin(2t) + te^{-0.3t} - \cos(3t)$$  
-    Tu misión es descifrar su comportamiento en el rango \(0 \leq t \leq 10\), evaluándola en exactamente 
-    <strong>1001 puntos</strong> usando <strong>NumPy</strong>.  
+    En este teatro, cada sonido tiene su propia frecuencia. Pero solo uno de ellos es el más profundo,  
+    el que resuena en lo más hondo del escenario. 🎤🔊  
 </p>
-<p class="lead">
-    🔑 <strong>La clave secreta</strong>:  
-    - Encuentra el instante exacto en el que la función alcanza su <strong>mínimo valor</strong>.  
-    - Descubre el <strong>máximo valor</strong> que la función puede alcanzar.  
-    - Escribe ambos números con <strong>cinco decimales</strong>, separados sin espacios.  
+<p>
+    Tu misión es encontrar <strong>la nota más grave</strong> en un conjunto de sonidos generados con NumPy.  
 </p>
-<p class="lead">
-    ⚠️ <strong>Atención, explorador</strong>: Solo la combinación exacta abrirá la siguiente puerta.  
-    ¡Que las matemáticas te guíen! 🚀
-</p>
+<hr>
+<h5>📜 Instrucciones:</h5>
 
-        <!-- Ecuación Matemática -->
-        <p class="lead">Como ejemplo, si el programa tiene como salida:<pre><code>Tiempo del mínimo: 10.36, Valor máximo: 8.690234709342343
-</code></pre>
-        la clave a ingresar será <code>10.360008.69023</code> </p>
+🎲 <strong>El destino está escrito:</strong> Usa <code>np.random.seed(42)</code> para que el universo (y NumPy) no cambie de opinión.<br>
+🎼 Genera <strong>tres frecuencias aleatorias</strong> entre 100 Hz y 1000 Hz.<br>
+🔍 Identifica la <strong>frecuencia más aguda</strong> de las tres.<br>
+🔑 Forma la clave secreta concatenando <code>"F"</code> + el número de la frecuencia más aguda + <code>"B"</code>.<br>
+<hr>
+<p>📂 <strong>Pista:</strong> Las notas graves son las que se sienten más profundas… y hacen vibrar el escenario. 🎶</p>
+<p>💡 Ejemplo de clave esperada: <code>F123B</code></p>
 
         <!-- Campo de Entrada con Bootstrap -->
         <input id="entrada" class="form-control w-25 mx-auto text-center" placeholder="Ingresa el código">
@@ -102,18 +98,12 @@
 
         <!-- Mensaje de éxito -->
         <div id="mensaje" class="alert alert-success mt-3">
-            <h4 class="alert-heading">✅ ¡Código Correcto! 🎉</h4>
-            <p>&#9989; ¡Código correcto! &#127881; ¡Lo lograste!  
-    Has descifrado el enigma y todo funciona a la perfección. 🧠✨  
-    Cada victoria te acerca más a convertirte en una <strong>leyenda de la programación<strong>. 🚀🔥  
-</p>
-<hr>
-<p class="mb-0">
-    Pero no cantes victoria todavía... ahora debes armarte de <strong>valor<strong>. 😨  
-    Prepárate para un <strong>viaje a ultratumba<strong> 💀, donde un <strong>muerto camina entre los vivos<strong>. 🧟‍♂️  
-    ¿Podrás encontrarlo antes de que él te encuentre a ti? 😱👀  
-</p>
-
+            <h4 class="alert-heading">🎉 ¡Código correcto! 🎭</h4>
+    <p>✅ ¡Lo lograste! Has afinado el oído y descifrado el enigma sonoro del teatro.  
+    Cada desafío te ha traído hasta aquí, y ahora solo queda un último acto…</p>
+    <hr>
+    <p class="mb-0">🎓 Es hora de poner todo en orden y dirigirte a la <strong>Calle de la Cultura</strong>.  
+    Allí te espera el gran final. ¡No bajes el telón todavía! 🚀📜</p>
         </div>
         <div id="mensaje-error" class="alert alert-danger mt-3 hidden">
             <h4 class="alert-heading">Código incorrecto</h4>
@@ -125,7 +115,7 @@
     <script>
         function verificarCodigo() {
             let codigoIngresado = document.getElementById("entrada").value.trim();
-            let codigoCorrecto = "8.470002.73026";
+            let codigoCorrecto = "F202B";
 
             if (codigoIngresado === codigoCorrecto) {
                 document.getElementById("mensaje").style.display = "block";

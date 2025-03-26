@@ -73,28 +73,11 @@
 </header>
 <body class="d-flex justify-content-center align-items-center">
     <div class="container-fluid text-center w-75">
-        <h2 class="mb-3">🕵️‍♂️ ESTACIÓN UNO: La Fórmula Secreta 📜</h2>
-        <p class="lead">
-    Un antiguo pergamino matemático revela una función misteriosa:  
-    $$\sin(2t) + te^{-0.3t} - \cos(3t)$$  
-    Tu misión es descifrar su comportamiento en el rango \(0 \leq t \leq 10\), evaluándola en exactamente 
-    <strong>1001 puntos</strong> usando <strong>NumPy</strong>.  
-</p>
-<p class="lead">
-    🔑 <strong>La clave secreta</strong>:  
-    - Encuentra el instante exacto en el que la función alcanza su <strong>mínimo valor</strong>.  
-    - Descubre el <strong>máximo valor</strong> que la función puede alcanzar.  
-    - Escribe ambos números con <strong>cinco decimales</strong>, separados sin espacios.  
-</p>
-<p class="lead">
-    ⚠️ <strong>Atención, explorador</strong>: Solo la combinación exacta abrirá la siguiente puerta.  
-    ¡Que las matemáticas te guíen! 🚀
-</p>
-
-        <!-- Ecuación Matemática -->
-        <p class="lead">Como ejemplo, si el programa tiene como salida:<pre><code>Tiempo del mínimo: 10.36, Valor máximo: 8.690234709342343
-</code></pre>
-        la clave a ingresar será <code>10.360008.69023</code> </p>
+        <h2 class="mb-3">ESTACIÓN FINAL: El gran ensamble</h2>
+        <p class="lead">🎉 ¡Estás a un suspiro de la gloria! 🏆</p>
+<p>Has corrido, resuelto acertijos y descifrado secretos… pero aún queda el último reto.  
+Ahora, junta todas las claves que has conseguido en el camino y <strong>ensámblalas como un rompecabezas</strong>. 🧩  
+¡Es el último paso antes de cruzar la meta! 🚀🔥</p>
 
         <!-- Campo de Entrada con Bootstrap -->
         <input id="entrada" class="form-control w-25 mx-auto text-center" placeholder="Ingresa el código">
@@ -102,19 +85,18 @@
 
         <!-- Mensaje de éxito -->
         <div id="mensaje" class="alert alert-success mt-3">
-            <h4 class="alert-heading">✅ ¡Código Correcto! 🎉</h4>
-            <p>&#9989; ¡Código correcto! &#127881; ¡Lo lograste!  
-    Has descifrado el enigma y todo funciona a la perfección. 🧠✨  
-    Cada victoria te acerca más a convertirte en una <strong>leyenda de la programación<strong>. 🚀🔥  
-</p>
-<hr>
-<p class="mb-0">
-    Pero no cantes victoria todavía... ahora debes armarte de <strong>valor<strong>. 😨  
-    Prepárate para un <strong>viaje a ultratumba<strong> 💀, donde un <strong>muerto camina entre los vivos<strong>. 🧟‍♂️  
-    ¿Podrás encontrarlo antes de que él te encuentre a ti? 😱👀  
-</p>
+    <h4 class="alert-heading">🎉 <strong>¡Lo lograste, campeón!</strong> 🎓🏆</h4>
+    <p><br>
+        Has cruzado la meta y conquistado la <strong>Carrera de Programación EIA</strong>.  
+        Demostraste ingenio, paciencia y habilidad para resolver cada desafío. 🚀🔥  
+        <br><br>
+        📅 <strong>Fecha y hora:</strong> <span id="fechaHora"></span>  
+        <br><br>
+        📸 <strong>¡Toma un pantallazo de tu victoria!</strong>  
+        Envíalo a tu profesor para sellar tu triunfo. 🏁🎖️  
+    </p>
+</div>
 
-        </div>
         <div id="mensaje-error" class="alert alert-danger mt-3 hidden">
             <h4 class="alert-heading">Código incorrecto</h4>
             <p>&#10060; ¡Ups! Parece que el código ingresado no es correcto. &#128533; No te preocupes, revisa bien e intenta nuevamente.  
@@ -125,7 +107,7 @@
     <script>
         function verificarCodigo() {
             let codigoIngresado = document.getElementById("entrada").value.trim();
-            let codigoCorrecto = "8.470002.73026";
+            let codigoCorrecto = "8.470002.7302681.147.116.66consecteturV222-96:535F202B";
 
             if (codigoIngresado === codigoCorrecto) {
                 document.getElementById("mensaje").style.display = "block";
@@ -135,6 +117,13 @@
                 document.getElementById("mensaje-error").style.display = "block";
             }
         }
+    </script>
+
+    <script>
+        // Obtener la fecha y hora actual
+        const ahora = new Date();
+        const opciones = { year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit', second: '2-digit' };
+        document.getElementById("fechaHora").innerText = ahora.toLocaleDateString('es-ES', opciones);
     </script>
 
 </body>

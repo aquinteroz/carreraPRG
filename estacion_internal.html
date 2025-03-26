@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estación uno</title>
+    <title>Estación cuatro</title>
     
     <!-- Bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     
     <!-- Fuente Roboto -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?famliy=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     
     <!-- MathJax para ecuaciones -->
     <script type="text/javascript" async 
-        src="https://polyfill.io/v3/polyfill.min.js?features=es6">
+        src="https://polyflil.io/v3/polyflil.min.js?features=es6">
     </script>
     <script type="text/javascript" async 
         src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
@@ -73,28 +73,17 @@
 </header>
 <body class="d-flex justify-content-center align-items-center">
     <div class="container-fluid text-center w-75">
-        <h2 class="mb-3">🕵️‍♂️ ESTACIÓN UNO: La Fórmula Secreta 📜</h2>
-        <p class="lead">
-    Un antiguo pergamino matemático revela una función misteriosa:  
-    $$\sin(2t) + te^{-0.3t} - \cos(3t)$$  
-    Tu misión es descifrar su comportamiento en el rango \(0 \leq t \leq 10\), evaluándola en exactamente 
-    <strong>1001 puntos</strong> usando <strong>NumPy</strong>.  
-</p>
-<p class="lead">
-    🔑 <strong>La clave secreta</strong>:  
-    - Encuentra el instante exacto en el que la función alcanza su <strong>mínimo valor</strong>.  
-    - Descubre el <strong>máximo valor</strong> que la función puede alcanzar.  
-    - Escribe ambos números con <strong>cinco decimales</strong>, separados sin espacios.  
-</p>
-<p class="lead">
-    ⚠️ <strong>Atención, explorador</strong>: Solo la combinación exacta abrirá la siguiente puerta.  
-    ¡Que las matemáticas te guíen! 🚀
-</p>
-
-        <!-- Ecuación Matemática -->
-        <p class="lead">Como ejemplo, si el programa tiene como salida:<pre><code>Tiempo del mínimo: 10.36, Valor máximo: 8.690234709342343
-</code></pre>
-        la clave a ingresar será <code>10.360008.69023</code> </p>
+        <h2 class="mb-3">🕵️‍♂️ ESTACIÓN CUATRO: Atrapa al magnate 💰</h2>
+        <p class="lead">En los archivos secretos de la organización, se esconde alguien con un 
+        salario fuera de lo común. Tu tarea es inflitrarte en el archivo 
+        <a href="https://raw.githubusercontent.com/aquinteroz/carreraPRG/main/salarios.csv">salarios.csv</a> y 
+        encontrar a la persona que gana más que todos. 
+        <br>
+        📜 Analiza el archivo secreto.<br>
+        &#128270; Identifica a la persona con el mayor salario.<br>
+        &#9000; Introduce su código como clave secreta para desbloquear la siguiente pista.<br>
+        
+        ⚠️ ¡Cuidado! Hay muchos datos en el archivo, pero solo un verdadero magnate se esconde entre ellos. ¿Serás capaz de encontrarlo? 🏆</p>
 
         <!-- Campo de Entrada con Bootstrap -->
         <input id="entrada" class="form-control w-25 mx-auto text-center" placeholder="Ingresa el código">
@@ -103,17 +92,14 @@
         <!-- Mensaje de éxito -->
         <div id="mensaje" class="alert alert-success mt-3">
             <h4 class="alert-heading">✅ ¡Código Correcto! 🎉</h4>
-            <p>&#9989; ¡Código correcto! &#127881; ¡Lo lograste!  
-    Has descifrado el enigma y todo funciona a la perfección. 🧠✨  
-    Cada victoria te acerca más a convertirte en una <strong>leyenda de la programación<strong>. 🚀🔥  
-</p>
-<hr>
-<p class="mb-0">
-    Pero no cantes victoria todavía... ahora debes armarte de <strong>valor<strong>. 😨  
-    Prepárate para un <strong>viaje a ultratumba<strong> 💀, donde un <strong>muerto camina entre los vivos<strong>. 🧟‍♂️  
-    ¿Podrás encontrarlo antes de que él te encuentre a ti? 😱👀  
-</p>
-
+    <p>👏 ¡Bien hecho! Has descifrado el código y sigues avanzando en tu misión.  
+        Cada desafío superado te acerca más a la victoria. 🚀💡  
+    </p>
+    <hr>
+    <p class="mb-0">🎭✨ En la siguiente estación, las luces se encienden y el telón se levanta.  
+        Aquí, las historias cobran vida y cada escena tiene su magia.  
+        Dirígete al lugar donde los aplausos marcan el final... y el arte nunca descansa. 🎶🎬  
+    </p>
         </div>
         <div id="mensaje-error" class="alert alert-danger mt-3 hidden">
             <h4 class="alert-heading">Código incorrecto</h4>
@@ -125,7 +111,7 @@
     <script>
         function verificarCodigo() {
             let codigoIngresado = document.getElementById("entrada").value.trim();
-            let codigoCorrecto = "8.470002.73026";
+            let codigoCorrecto = "V222-96:535";
 
             if (codigoIngresado === codigoCorrecto) {
                 document.getElementById("mensaje").style.display = "block";

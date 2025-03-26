@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estación uno</title>
+    <title>Estación tres</title>
     
     <!-- Bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -22,7 +22,7 @@
     <style>
         body {
             font-family: 'Roboto', sans-serif;
-            padding-top: 120px; /* Ajuste para evitar que el header tape contenido */
+            padding-top: 120px;
         }
 
         header {
@@ -73,28 +73,21 @@
 </header>
 <body class="d-flex justify-content-center align-items-center">
     <div class="container-fluid text-center w-75">
-        <h2 class="mb-3">🕵️‍♂️ ESTACIÓN UNO: La Fórmula Secreta 📜</h2>
-        <p class="lead">
-    Un antiguo pergamino matemático revela una función misteriosa:  
-    $$\sin(2t) + te^{-0.3t} - \cos(3t)$$  
-    Tu misión es descifrar su comportamiento en el rango \(0 \leq t \leq 10\), evaluándola en exactamente 
-    <strong>1001 puntos</strong> usando <strong>NumPy</strong>.  
+        <h2 class="mb-3">🕵️‍♂️ ESTACIÓN TRES: La Sombra en el Texto 🔎</h2>
+<p class="lead">
+    ¡Bienvenido a la tercera estación! Aquí se esconde un **Doppelgänger**, una palabra que aparece **dos veces seguidas** en un texto oculto. 👀📜  
 </p>
 <p class="lead">
-    🔑 <strong>La clave secreta</strong>:  
-    - Encuentra el instante exacto en el que la función alcanza su <strong>mínimo valor</strong>.  
-    - Descubre el <strong>máximo valor</strong> que la función puede alcanzar.  
-    - Escribe ambos números con <strong>cinco decimales</strong>, separados sin espacios.  
+    Tu misión es programar un **cazador de clones** 🖥️⚡. Debes escribir un programa en Python que analice el archivo  
+    <a href="https://raw.githubusercontent.com/aquinteroz/carreraPRG/main/lorem_ipsum.txt">lorem_ipsum.txt</a> y detecte la **primera palabra repetida consecutivamente**.  
 </p>
 <p class="lead">
-    ⚠️ <strong>Atención, explorador</strong>: Solo la combinación exacta abrirá la siguiente puerta.  
-    ¡Que las matemáticas te guíen! 🚀
+    🗝️ **Clave secreta**: Cuando encuentres la palabra del impostor, introdúcela para avanzar.  
+</p>
+<p class="lead">
+    ⚠️ **Pistas**: No confíes en todo lo que lees... algunas palabras pueden estar más cerca de lo que crees. 😏📖  
 </p>
 
-        <!-- Ecuación Matemática -->
-        <p class="lead">Como ejemplo, si el programa tiene como salida:<pre><code>Tiempo del mínimo: 10.36, Valor máximo: 8.690234709342343
-</code></pre>
-        la clave a ingresar será <code>10.360008.69023</code> </p>
 
         <!-- Campo de Entrada con Bootstrap -->
         <input id="entrada" class="form-control w-25 mx-auto text-center" placeholder="Ingresa el código">
@@ -102,17 +95,15 @@
 
         <!-- Mensaje de éxito -->
         <div id="mensaje" class="alert alert-success mt-3">
-            <h4 class="alert-heading">✅ ¡Código Correcto! 🎉</h4>
-            <p>&#9989; ¡Código correcto! &#127881; ¡Lo lograste!  
-    Has descifrado el enigma y todo funciona a la perfección. 🧠✨  
-    Cada victoria te acerca más a convertirte en una <strong>leyenda de la programación<strong>. 🚀🔥  
-</p>
-<hr>
-<p class="mb-0">
-    Pero no cantes victoria todavía... ahora debes armarte de <strong>valor<strong>. 😨  
-    Prepárate para un <strong>viaje a ultratumba<strong> 💀, donde un <strong>muerto camina entre los vivos<strong>. 🧟‍♂️  
-    ¿Podrás encontrarlo antes de que él te encuentre a ti? 😱👀  
-</p>
+    <h4 class="alert-heading">✅ ¡Código Correcto! 🎉</h4>
+    <p>🔥 ¡Lo lograste! Todo está en orden y funcionando a la perfección.  
+        Cada desafío superado te acerca más a convertirte en una **leyenda de la programación**. 🚀💡  
+    </p>
+    <hr>
+    <p class="mb-0">🌍✈️ Tu próximo destino no está en un mapa,  
+        pero aquí te ayudarán a **llegar más lejos de lo que imaginas**. 🛫✨  
+    </p>
+</div>
 
         </div>
         <div id="mensaje-error" class="alert alert-danger mt-3 hidden">
@@ -125,7 +116,7 @@
     <script>
         function verificarCodigo() {
             let codigoIngresado = document.getElementById("entrada").value.trim();
-            let codigoCorrecto = "8.470002.73026";
+            let codigoCorrecto = "consectetur";
 
             if (codigoIngresado === codigoCorrecto) {
                 document.getElementById("mensaje").style.display = "block";
